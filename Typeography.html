@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html style="padding: 0px; margin: 0px;">
+<head>
+<link rel="stylesheet" type="text/css" href="ClassVariables.css">
+<link rel="stylesheet" type="text/css" href="Typeography.css">
+<link rel="stylesheet" type="text/css" href="Buttons.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Buttons</title>
+</head>
+<body style="padding: 0; margin: 0;">
+<div class="theme-light" style="padding: 5%; background-color: white;">
+    <a href="index.html" class="btn btn-primary btn-icon"><span class="fa fa-arrow-left"></span></a>
+<h1>Typeography</h1>
+<h2>Light Typeography</h2>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<p>Paragraph</p>
+<p class="p-bg">Paragraph big</p>
+<p class="p-sm">Paragraph small</p>
+</div>
+<div  class="theme-dark" style="padding: 5%; background-color: black;">
+<h2 style="color:red;">Dark Typeography</h2>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<p>Paragraph</p>
+<p class="p-bg">Paragraph big</p>
+<p class="p-sm">Paragraph small</p>
+</div>
+</body>
+
+<script>
+    const themeSwitch = document.getElementById('themeSwitch');
+    themeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+        document.body.classList.add('theme-dark');
+        document.body.classList.remove('theme-light');
+        } else {
+        document.body.classList.add('theme-light');
+        document.body.classList.remove('theme-dark');
+        }
+    });
+</script>
+</html>

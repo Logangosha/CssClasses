@@ -1,0 +1,203 @@
+.theme-dark{
+    /*background color*/
+    --background-color: #000000;
+    background-color: var(--background-color);
+    /*primary color*/
+    --btn-primary-color: black;
+    --btn-primary-background-color: red;
+    --btn-primary-hover-background-color: #e60000;
+    --btn-primary-focus-background-color: #e60000;
+    --btn-primary-active-background-color: #cc0000;
+    /*secondary color*/
+    --btn-secondary-color: red;
+    --btn-secondary-background-color: transparent;
+    --btn-secondary-hover-background-color: transparent;
+    --btn-secondary-focus-background-color: transparent;
+    --btn-secondary-active-background-color: transparent;
+    --btn-secondary-hover-color: #e60000;
+    --btn-secondary-focus-color: #e60000;
+    --btn-secondary-active-color:#cc0000;
+    /*success color*/
+    --btn-success-color: black;
+    --btn-success-background-color: rgb(0, 192, 0);
+    --btn-success-hover-background-color: #008000;
+    --btn-success-focus-background-color: #008000;
+    --btn-success-active-background-color: #006600;
+    /*danger color*/
+    --btn-danger-color: black; 
+    --btn-danger-background-color: red;
+    --btn-danger-hover-background-color: #e60000;
+    --btn-danger-focus-background-color: #e60000;
+    --btn-danger-active-background-color: #cc0000;
+    /*disabled color*/
+    --btn-disabled-color: red;
+    --btn-disabled-background-color: #660000;
+    --btn-disabled-hover-background-color: #660000;
+    --btn-disabled-focus-background-color: #660000;
+    --btn-disabled-active-background-color: #660000;
+    /*selected color*/
+    --btn-selected-color: black;
+    --btn-selected-background-color: red;
+    --btn-selected-hover-background-color: #e60000;
+    --btn-selected-focus-background-color: #e60000;
+    --btn-selected-active-background-color: #cc0000;
+    /*unselected color*/
+    --btn-unselected-color: red;
+    --btn-unselected-background-color: transparent;
+    --btn-unselected-hover-background-color: transparent;
+    --btn-unselected-focus-background-color: #e60000;
+    --btn-unselected-active-background-color: #cc0000;
+    --btn-unselected-hover-color: red;
+    --btn-unselected-focus-color: black;
+    --btn-unselected-active-color: black;
+    --btn-unselected-outline-color: red;
+    --btn-unselected-outline-hover-color: #e60000;
+    --btn-unselected-outline-focus-color: #e60000;
+    --btn-unselected-outline-active-color: #cc0000;
+    /*Typeography*/
+    /*h1*/
+    --h1-color: red;
+    --h1-font-size: 6rem;
+    /*h2*/
+    --h2-color: red;
+    --h2-font-size: 4rem;
+    /*h3*/
+    --h3-color: red;
+    --h3-font-size: 3rem;
+    /*h4*/
+    --h4-color: red;
+    --h4-font-size: 2rem;
+    /*p*/
+    --p-color: red;
+    --p-font-size: 1.5rem;
+    /*p-sm*/
+    --p-sm-color: red;
+    --p-sm-font-size: 1rem;
+    /*p-bg*/
+    --p-bg-color: red;
+    --p-bg-font-size: 2rem;
+    /*Input Feilds*/
+    /*input*/
+    --input-color: red;
+    --input-background-color: #000000;
+    --input-background-hover-color: #660000;
+    --input-background-focus-color: #660000;
+    --input-background-active-color: #660000;
+    --input-border-color: red;
+    --input-border-hover-color: #e60000;
+    --input-border-focus-color: #e60000;
+    --input-border-active-color: #cc0000;
+    /*Scroll bar*/
+    --webkit-scrollbar-background-color: black; 
+    --webkit-scrollbar-button-color: black;
+    --webkit-scrollbar-track-background-color: black;
+    --webkit-scrollbar-track-piece-background-color: red;  
+    --webkit-scrollbar-thumb-background-color: black;
+    --webkit-scrollbar-thumb-border-color: red; 
+    --webkit-resizer-background-color: red;
+    --webkit-scrollbar-corner-background-color:red;
+}
+.theme-light{
+    /*background color*/
+    --background-color: #ffffff;
+    background-color: var(--background-color);
+    /*buttons*/
+    
+    /*btn-primary color*/
+    --btn-primary-color: white;
+    --btn-primary-background-color: red;
+    --btn-primary-hover-background-color: #e60000;
+    --btn-primary-focus-background-color: #e60000;
+    --btn-primary-active-background-color:#cc0000;
+    /*btn-secondary color*/
+    --btn-secondary-color: red;
+    --btn-secondary-background-color: transparent;
+    --btn-secondary-hover-background-color: transparent;
+    --btn-secondary-focus-background-color: transparent;
+    --btn-secondary-active-background-color: transparent;
+    --btn-secondary-hover-color: #e60000;
+    --btn-secondary-focus-color: #e60000;
+    --btn-secondary-active-color:#cc0000;
+    /*btn-success color*/
+    --btn-success-color: white;
+    --btn-success-background-color: rgb(0, 192, 0);
+    --btn-success-hover-background-color: #008000;
+    --btn-success-focus-background-color: #008000;
+    --btn-success-active-background-color: #006600;
+    /*btn-danger color*/
+    --btn-danger-color: white;
+    --btn-danger-background-color: red;
+    --btn-danger-hover-background-color: #e60000;
+    --btn-danger-focus-background-color: #e60000;
+    --btn-danger-active-background-color: #cc0000;
+    /*btn-disabled color*/
+    --btn-disabled-color: white;
+    --btn-disabled-background-color: #ccc;
+    --btn-disabled-hover-background-color: #ccc;
+    --btn-disabled-focus-background-color: #ccc;
+    --btn-disabled-active-background-color: #ccc;
+    /*btn-selected color*/
+    --btn-selected-color: white;
+    --btn-selected-background-color: red;
+    --btn-selected-hover-background-color: #e60000;
+    --btn-selected-focus-background-color: #e60000;
+    --btn-selected-active-background-color: #cc0000;
+    /*btn-unselected color*/
+    --btn-unselected-color: red;
+    --btn-unselected-background-color: transparent;
+    --btn-unselected-hover-background-color: transparent;
+    --btn-unselected-focus-background-color: #e60000;
+    --btn-unselected-active-background-color: #cc0000;
+    --btn-unselected-hover-color: red;
+    --btn-unselected-focus-color: white;
+    --btn-unselected-active-color: white;
+    --btn-unselected-outline-color: red;
+    --btn-unselected-outline-hover-color: #e60000;
+    --btn-unselected-outline-focus-color: #e60000;
+    --btn-unselected-outline-active-color: #cc0000;
+    /*Typeography*/
+    /*h1*/
+    --h1-color: red;
+    --h1-font-size: 6rem;
+    /*h1-landing*/
+    --h1-landing-color: red;
+    --h1-landing-font-size: 6rem; 
+    /*h2*/
+    --h2-color: red;
+    --h2-font-size: 4rem;
+    /*h3*/
+    --h3-color: red;
+    --h3-font-size: 3rem;
+    /*h4*/
+    --h4-color: red;
+    --h4-font-size: 2rem;
+    /*p*/
+    --p-color: red;
+    --p-font-size: 1.5rem;
+    /*p-sm*/
+    --p-sm-color: red;
+    --p-sm-font-size: 1rem;
+    /*p-bg*/
+    --p-bg-color: red;
+    --p-bg-font-size: 2rem;
+    /*Input Feilds*/
+    /*input*/
+    --input-color: red;
+    --input-background-color: white;
+    --input-background-hover-color: #f3f2f2;
+    --input-background-focus-color: #f3f2f2;
+    --input-background-active-color: #f3f2f2;
+    --input-border-color: red;
+    --input-border-hover-color: #e60000;
+    --input-border-focus-color: #e60000;
+    --input-border-active-color: #cc0000;
+    /*Scroll bar*/
+    --webkit-scrollbar-background-color: white; 
+    --webkit-scrollbar-button-color: white;
+    --webkit-scrollbar-track-background-color: white;
+    --webkit-scrollbar-track-piece-background-color: red;  
+    --webkit-scrollbar-thumb-background-color: white;
+    --webkit-scrollbar-thumb-border-color: red; 
+    --webkit-resizer-background-color: red;
+    --webkit-scrollbar-corner-background-color:red;
+}

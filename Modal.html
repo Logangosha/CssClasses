@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html style="padding: 0px; margin: 0px;">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="ClassVariables.css">
+<link rel="stylesheet" type="text/css" href="Typeography.css">
+<link rel="stylesheet" type="text/css" href="Buttons.css">
+<link rel="stylesheet" type="text/css" href="Input.css">
+<link rel="stylesheet" type="text/css" href="Modal.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Inputs</title>
+</head>
+<body style="padding: 0; margin: 0;">
+<div class="theme-light" style="padding: 5%; background-color: white;">
+    <a href="index.html" class="btn btn-primary btn-icon"><span class="fa fa-arrow-left"></span></a>
+<h1>Modals</h1>
+<h2>Light Modals</h2>
+
+<button id="myBtn" class="btn btn-primary">Open Modal</button>
+<!-- The Modal -->
+<div id="myModal" class="modal pop-up-modal">
+    <!-- Modal content -->
+    <div class="pop-up-modal-content">
+      <div class="modal-header">
+        <span class="fa fa-warning"></span>
+        <h2>Modal Header</h2>
+        <p class="modal-subheader"><b>Some text in the Modal Body, Some other text...Some text in the Modal Body, Some other text...Some text in the Modal Body, Some other text...</b></p>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-secondary">Cancel</button>
+        <button class="btn btn-primary" style="float: right;">OK</button>
+      </div>
+    </div>
+</div>
+  
+<p>default modal that all modals will share</p>
+<p>pop up modal</p>
+<p>login screen modal</p>
+<p>sign up screen modal</p>
+
+</div>
+<div  class="theme-dark" style="padding: 5%; background-color: black;">
+<h2 style="color:red;">Dark Modals</h2>
+</div>
+</body>
+<script>
+        // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+</html>

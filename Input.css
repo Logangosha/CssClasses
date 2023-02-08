@@ -1,0 +1,124 @@
+input {
+    display:block;
+    background-color: var(--input-background-color);
+    margin-top: 2em;
+    padding: 1em 1em .65em .5em;
+    font-size: 1.5rem !important;
+    border: none;
+    border-bottom: 5px solid var(--input-border-color);
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    color: var(--input-color);
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+input:hover {
+    background-color: var(--input-background-hover-color);
+}
+
+input:focus {
+    outline: none;
+    background-color: var(--input-background-focus-color);
+}
+
+input:active {
+    background-color: var(--input-background-active-color);
+}
+
+input.sm {
+    width: 10rem;
+}
+
+input.lg {
+    width: 30rem;
+}
+
+input.full-width {
+    width: 100%;
+}
+
+input.multi-line {
+    height: 10rem;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+    background:
+      linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#000 45%,#000 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+      linear-gradient(135deg, transparent 0%,transparent 43%,#000 45%,#000 55%,transparent 57%,transparent 100%);
+  }
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    font-size: 1.5em;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+  }
+
+  textarea {
+    display:block;
+    background-color: var(--input-background-color);
+    margin-top: 2em;
+    padding: 1em 1em .65em .5em;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 5px solid var(--input-border-color);
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    color: var(--input-color);
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    height: 10rem;
+    width: 30rem;
+  }
+
+    textarea:hover {
+        background-color: var(--input-background-hover-color);
+    }
+
+    textarea:focus {
+        outline: none;
+        background-color: var(--input-background-focus-color);
+    }
+
+    textarea:active {
+        background-color: var(--input-background-active-color);
+    }
+    
+    ::-webkit-resizer {
+        display: none;
+      }
+
+      ::-webkit-scrollbar { 
+        background-color: var(--webkit-scrollbar-background-color);
+       }
+      ::-webkit-scrollbar-button {
+        display: none;
+      }   
+      ::-webkit-scrollbar-track   {
+        background-color: var(--webkit-scrollbar-track-background-color);
+       }
+      ::-webkit-scrollbar-track-piece  { 
+        background-color: var(--webkit-scrollbar-track-piece-background-color);
+       }
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--webkit-scrollbar-thumb-background-color);
+        border: 2px solid var(--webkit-scrollbar-thumb-border-color);
+       }
+      ::-webkit-scrollbar-corner { 
+        background-color: var(--webkit-scrollbar-corner-background-color);
+       }
+      

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="theme-dark" style="padding: 0px; margin: 0px;">
+<head>
+    <link rel="stylesheet" type="text/css" href="ClassVariables.css">
+    <link rel="stylesheet" type="text/css" href="Typeography.css">
+    <link rel="stylesheet" type="text/css" href="Buttons.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Buttons</title>
+</head>
+<body style="padding: 0; margin: 0;">
+<div style="padding: 5%;" class="theme-light">
+    <a href="index.html" class="btn btn-primary btn-icon"><span class="fa fa-arrow-left"></span></a>
+<h1>Buttons</h1>
+<h2>Light Buttons</h2>
+<button class="btn btn-primary">Primary Button</button>
+<br>
+<button class="btn btn-secondary">Secondary Button</button>
+<br>
+<button class="btn btn-success">Success Button</button>
+<br>
+<button class="btn btn-danger">Danger Button</button>
+<br>
+<button class="btn btn-icon btn-disabled"><span class="fa fa-gear"></span></button>
+<button class="btn btn-icon btn-primary"><span class="fa fa-arrow-right"></span></button>
+<button class="btn btn-icon btn-secondary"><span class="fa fa-user"></span></button>
+<br>
+<button class="btn btn-icon-small btn-success"><span class="fa fa-gear"></span></button>
+<button class="btn btn-icon-small btn-primary"><span class="fa fa-arrow-right"></span></button>
+<button class="btn btn-icon-small btn-secondary"><span class="fa fa-user"></span></button>
+<br>
+<button class="btn btn-icon-large btn-unselected"><span class="fa fa-gear"></span></button>
+<button class="btn btn-icon-large btn-unselected"><span class="fa fa-arrow-right"></span></button>
+<button class="btn btn-icon-large btn-unselected btn-disabled"><span class="fa fa-user"></span></button>
+<br>
+<button class="btn btn-small btn-primary">Small Button</button>
+<br>
+<button class="btn btn-large btn-primary">Large Button</button>
+<br>
+<button class="btn btn-disabled btn-primary">Disabled Button</button>
+<br>
+<button class="btn btn-selected btn-primary">Selected Button</button>
+<br>
+<button class="btn btn-unselected btn-primary">Unselected Button</button>
+</div>
+<div style="padding: 5%; background-color: black;">
+
+<h2 style="color:red;" class="theme-dark">Dark Buttons</h2>
+<button class="btn btn-dark btn-primary">Primary Button</button>
+<br>
+<button class="btn btn-dark btn-secondary">Secondary Button</button>
+<br>
+<button class="btn btn-dark btn-success">Success Button</button>
+<br>
+<button class="btn btn-dark btn-danger">Danger Button</button>
+<br>
+<button class="btn btn-dark btn-icon btn-disabled"><span class="fa fa-gear"></span></button>
+<button class="btn btn-dark btn-icon btn-primary"><span class="fa fa-arrow-right"></span></button>
+<button class="btn btn-dark btn-icon btn-secondary"><span class="fa fa-user"></span></button>
+<br>
+<button class="btn btn-dark btn-icon-small btn-success"><span class="fa fa-gear"></span></button>
+<button class="btn btn-dark btn-icon-small btn-primary"><span class="fa fa-arrow-right"></span></button>
+<button class="btn btn-dark btn-icon-small btn-secondary"><span class="fa fa-user"></span></button>
+<br>
+<button class="btn btn-dark btn-icon-large btn-unselected"><span class="fa fa-gear"></span></button>
+<button class="btn btn-dark btn-icon-large btn-unselected"><span class="fa fa-arrow-right"></span></button>
+<button class="btn btn-dark btn-icon-large btn-unselected btn-disabled"><span class="fa fa-user"></span></button>
+<br>
+<button class="btn btn-dark btn-small btn-primary">Small Button</button>
+<br>
+<button class="btn btn-dark btn-large btn-primary">Large Button</button>
+<br>
+<button class="btn btn-dark btn-disabled btn-primary">Disabled Button</button>
+<br>
+<button class="btn btn-dark btn-selected btn-primary">Selected Button</button>
+<br>
+<button class="btn btn-dark btn-unselected btn-primary">Unselected Button</button>
+</div>
+</body>
+
+<script>
+    const themeSwitch = document.getElementById('themeSwitch');
+    themeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+        document.body.classList.add('theme-dark');
+        document.body.classList.remove('theme-light');
+        } else {
+        document.body.classList.add('theme-light');
+        document.body.classList.remove('theme-dark');
+        }
+    });
+</script>
+</html>

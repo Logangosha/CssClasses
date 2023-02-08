@@ -1,0 +1,33 @@
+<!--Create home page-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="ClassVariables.css">
+    <link rel="stylesheet" type="text/css" href="Typeography.css">
+    <link rel="stylesheet" type="text/css" href="Buttons.css">
+<title>Home Page</title>
+</head>
+<body class="theme-light">
+<h1>Styling for Chess App</h1>
+<a class="btn btn-secondary" href="Buttons.html">Buttons</a>
+<a class="btn btn-secondary" href="Typeography.html">Typography</a>
+<a class="btn btn-secondary" href="Input.html">Inputs</a>
+<a class="btn btn-secondary" href="Modal.html">Modals</a>
+<input type="checkbox" id="themeSwitch" style="visibility: hidden;" name="theme-switch" class="btn btn-unselected" />
+<label for="themeSwitch" class="btn btn-unselected">
+  <span>Switch theme</span>
+</label>
+<script>
+    const themeSwitch = document.getElementById('themeSwitch');
+    themeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+        document.body.classList.add('theme-dark');
+        document.body.classList.remove('theme-light');
+        } else {
+        document.body.classList.add('theme-light');
+        document.body.classList.remove('theme-dark');
+        }
+    });
+</script>
+</body>
+</html>

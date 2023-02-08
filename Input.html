@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="theme-dark" style="padding: 0px; margin: 0px;">
+<head>
+<link rel="stylesheet" type="text/css" href="ClassVariables.css">
+<link rel="stylesheet" type="text/css" href="Typeography.css">
+<link rel="stylesheet" type="text/css" href="Buttons.css">
+<link rel="stylesheet" type="text/css" href="Input.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Inputs</title>
+</head>
+<body style="padding: 0; margin: 0;">
+<div class="theme-light" style="padding: 5%; background-color: white;">
+    <a href="index.html" class="btn btn-primary btn-icon"><span class="fa fa-arrow-left"></span></a>
+<h1>Imputs</h1>
+<h2>Light Imputs</h2>
+<button class="btn btn-icon-large btn-unselected" id="checkBox1" type="button" onclick="CheckBox_Checked(1)"><span class="fa fa-user"></span></button>
+<button class="btn btn-icon btn-unselected" id="checkBox2" type="button" onclick="CheckBox_Checked(2)"><span class="fa fa-user"></span></button>
+<button class="btn btn-icon-small btn-unselected" id="checkBox3" type="button" onclick="CheckBox_Checked(3)"><span class="fa fa-user"></span></button>
+<br>
+<button  class="btn btn-icon btn-unselected" id="radio1" type="button" onclick="Radio_Checked(1)"><span class="fa fa-bullseye"></span></button>
+<button  class="btn btn-icon btn-unselected" id="radio2" type="button" onclick="Radio_Checked(2)"><span class="fa fa-bullseye"></span></button>
+<button  class="btn btn-icon btn-unselected" id="radio3" type="button" onclick="Radio_Checked(3)"><span class="fa fa-bullseye"></span></button>
+<input class="full-width" type="date">
+<input placeholder="Default"  type="email">
+<input placeholder="Password" type="password">
+<input placeholder="Large" class="lg" type="search">
+<input placeholder="Small" class="sm" type="tel">
+<textarea placeholder="Textarea" class="multi-line" row="5"></textarea>
+<br>
+<input  class="btn btn-primary" type="submit">
+</div>
+<div  class="theme-dark" style="padding: 5%; background-color: black;">
+<h2 style="color:red;">Dark Imputs</h2>
+<button class="btn btn-icon-large btn-unselected" id="dcheckBox1" type="button" onclick="DarkCheckBox_Checked(1)"><span class="fa fa-user"></span></button>
+<button class="btn btn-icon btn-unselected" id="dcheckBox2" type="button" onclick="DarkCheckBox_Checked(2)"><span class="fa fa-user"></span></button>
+<button class="btn btn-icon-small btn-unselected" id="dcheckBox3" type="button" onclick="DarkCheckBox_Checked(3)"><span class="fa fa-user"></span></button>
+<br>
+<button  class="btn btn-icon btn-unselected" id="dradio1" type="button" onclick="dRadio_Checked(1)"><span class="fa fa-bullseye"></span></button>
+<button  class="btn btn-icon btn-unselected" id="dradio2" type="button" onclick="dRadio_Checked(2)"><span class="fa fa-bullseye"></span></button>
+<button  class="btn btn-icon btn-unselected" id="dradio3" type="button" onclick="dRadio_Checked(3)"><span class="fa fa-bullseye"></span></button>
+<input class="full-width" type="date">
+<input placeholder="Default" type="email">
+<input placeholder="Password" type="password">
+<input placeholder="Large" class="lg" type="search">
+<input placeholder="Small" class="sm" type="tel">
+<textarea placeholder="Textarea" class="multi-line" style="height: 10em;" cols="60"></textarea>
+<br>
+<input  class="btn btn-primary" type="submit">
+</div>
+</body>
+<script>
+    function CheckBox_Checked(n){
+        var checkBox = document.getElementById("checkBox"+n);
+        if(checkBox.classList.contains("btn-unselected")){
+            checkBox.classList.remove("btn-unselected");
+            checkBox.classList.add("btn-selected");
+        }else{
+            checkBox.classList.remove("btn-selected");
+            checkBox.classList.add("btn-unselected");
+        }
+    }
+    function Radio_Checked(n){
+        ClearRadio();
+        var radio = document.getElementById("radio"+n);
+        if(radio.classList.contains("btn-unselected")){
+            radio.classList.remove("btn-unselected");
+            radio.classList.add("btn-selected");
+        }else{
+            radio.classList.remove("btn-selected");
+            radio.classList.add("btn-unselected");
+        }
+    }
+    function ClearRadio(){
+        if(document.getElementById("radio1").classList.contains("btn-selected")){
+            document.getElementById("radio1").classList.remove("btn-selected");
+            document.getElementById("radio1").classList.add("btn-unselected");
+        }
+        if(document.getElementById("radio2").classList.contains("btn-selected")){
+            document.getElementById("radio2").classList.remove("btn-selected");
+            document.getElementById("radio2").classList.add("btn-unselected");
+        }
+        if(document.getElementById("radio3").classList.contains("btn-selected")){
+            document.getElementById("radio3").classList.remove("btn-selected");
+            document.getElementById("radio3").classList.add("btn-unselected");
+        }
+    }
+    function DarkCheckBox_Checked(n){
+        var checkBox = document.getElementById("dcheckBox"+n);
+        if(checkBox.classList.contains("btn-unselected")){
+            checkBox.classList.remove("btn-unselected");
+            checkBox.classList.add("btn-selected");
+        }else{
+            checkBox.classList.remove("btn-selected");
+            checkBox.classList.add("btn-unselected");
+        }
+    }
+    
+    function dRadio_Checked(n){
+        var radio = document.getElementById("dradio"+n);
+        if(radio.classList.contains("btn-unselected"))
+        {
+            DarkClearRadio();
+            radio.classList.remove("btn-unselected");
+            radio.classList.add("btn-selected");
+        }
+        else
+        {
+            radio.classList.remove("btn-selected");
+            radio.classList.add("btn-unselected");
+        }
+    }
+    function DarkClearRadio(){
+        if(document.getElementById("dradio1").classList.contains("btn-selected")){
+            document.getElementById("dradio1").classList.remove("btn-selected");
+            document.getElementById("dradio1").classList.add("btn-unselected");
+        }
+        if(document.getElementById("dradio2").classList.contains("btn-selected")){
+            document.getElementById("dradio2").classList.remove("btn-selected");
+            document.getElementById("dradio2").classList.add("btn-unselected");
+        }
+        if(document.getElementById("dradio3").classList.contains("btn-selected")){
+            document.getElementById("dradio3").classList.remove("btn-selected");
+            document.getElementById("dradio3").classList.add("btn-unselected");
+        }
+    }
+</script>
+</html>
