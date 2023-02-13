@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="padding: 0px; margin: 0px;">
+<html style="padding: 0px; margin: 0px;" class="Custom-Styles">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -13,24 +13,24 @@
 <title>Inputs</title>
 </head>
 <body style="padding: 0; margin: 0;">
-<div class="theme-light" style="padding: 5%; background-color: white;">
-    <a href="index.html" class="btn btn-primary btn-icon"><span class="fa fa-arrow-left"></span></a>
+<div class="theme-light Custom-Styles" style="padding: 5%; background-color: white;">
+    <a href="index.html" class="Btn Btn-primary Btn-icon"><span class="fa fa-arrow-left"></span></a>
 <h1>Modals</h1>
 <h2>Light Modals</h2>
 
-<button id="myBtn" class="btn btn-primary">Open Modal</button>
+<button id="myBtn" class="Btn Btn-primary">Open Modal</button>
 <!-- The Modal -->
 <div id="myModal" class="modal pop-up-modal">
     <!-- Modal content -->
     <div class="pop-up-modal-content">
-      <div class="modal-header">
+      <div class="modal-head">
         <span class="fa fa-warning"></span>
         <h2>Modal Header</h2>
         <p class="modal-subheader"><b>Some text in the Modal Body, Some other text...Some text in the Modal Body, Some other text...Some text in the Modal Body, Some other text...</b></p>
       </div>
       <div class="modal-body">
-        <button class="btn btn-secondary">Cancel</button>
-        <button class="btn btn-primary" style="float: right;">OK</button>
+        <button class="Btn Btn-secondary">Cancel</button>
+        <button class="Btn Btn-primary" style="float: right;">OK</button>
       </div>
     </div>
 </div>
@@ -50,13 +50,13 @@
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    var Btn = document.getElementById("myBtn");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
-    btn.onclick = function() {
+    Btn.onclick = function() {
     modal.style.display = "block";
     }
 
