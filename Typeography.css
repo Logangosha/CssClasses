@@ -2,12 +2,14 @@ h1 {
     color: var(--h1-color);
     font-size: var(--h1-font-size);
     font-family: var(--h1-font-family);
+    background-color: var(--h1-background-color);
 }
 
 h1.h1-landing {
     color: var(--h1-landing-color);
     font-size: var(--h1-landing-font-size);
     font-family: var(--h1-landing-font-family);
+    background-color: var(--h1-landing-background-color);
 }
 
 h2 {

@@ -3,7 +3,7 @@ input {
     background-color: var(--input-background-color);
     margin-top: 2em;
     padding: 1em 1em .65em .5em;
-    font-size: 1.5rem !important;
+    font-size: 3rem;
     border: none;
     border-bottom: 5px solid var(--input-border-color);
     box-sizing:border-box;

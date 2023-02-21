@@ -10,7 +10,7 @@
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Buttons</title>
 </head>
-<body style="padding: 0; margin: 0;">
+<body class="Custom-Styles" style="padding: 0; margin: 0;">
 <div style="padding: 5%;" class="theme-light">
     <a href="index.html" class="Btn Btn-primary Btn-icon"><span class="fa fa-arrow-left"></span></a>
 <h1>Buttons</h1>
@@ -43,7 +43,7 @@
 <br>
 <button class="Btn Btn-selected Btn-primary">Selected Button</button>
 <br>
-<button class="Btn Btn-unselected Btn-primary">Unselected Button</button>
+<button class="Btn Btn-unselected">Unselected Button</button>
 </div>
 <div style="padding: 5%; background-color: black;">
 
@@ -52,7 +52,7 @@
 <br>
 <button class="Btn Btn-dark Btn-secondary">Secondary Button</button>
 <br>
-<button class="Btn Btn-dark Btn-success">Success Button</button>
+<button class="Btn Btn-success">Success Button</button>
 <br>
 <button class="Btn Btn-dark Btn-danger">Danger Button</button>
 <br>
@@ -76,7 +76,7 @@
 <br>
 <button class="Btn Btn-dark Btn-selected Btn-primary">Selected Button</button>
 <br>
-<button class="Btn Btn-dark Btn-unselected Btn-primary">Unselected Button</button>
+<button class="Btn Btn-dark Btn-unselected ">Unselected Button</button>
 </div>
 </body>
 
@@ -91,5 +91,16 @@
         document.body.classList.remove('theme-dark');
         }
     });
+
+    /*When a button with class Btn-unselected is clicked then class is changed to Btn-selected */
+    var btns = document.getElementsByClassName("Btn-unselected");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            this.classList.remove("Btn-unselected");
+            this.classList.add("Btn-selected");
+        });
+    }
+
+    
 </script>
 </html>

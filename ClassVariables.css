@@ -4,19 +4,21 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
 .Custom-Styles{
     /*Typeography*/
     /*h1*/
-    --h1-font-size: 6rem;
+    --h1-font-size: 10em;
+    /*h1-landing*/
+    --h1-landing-font-size: 10em;
     /*h2*/
-    --h2-font-size: 4rem;
+    --h2-font-size: 8em;
     /*h3*/
-    --h3-font-size: 3rem;
+    --h3-font-size: 6em;
     /*h4*/
-    --h4-font-size: 2rem;
+    --h4-font-size: 4em;
     /*p*/
-    --p-font-size: 1.5rem;
+    --p-font-size: 2em;
     /*p-sm*/
-    --p-sm-font-size: 1rem;
+    --p-sm-font-size: 1.5em;
     /*p-bg*/
-    --p-bg-font-size: 2rem;
+    --p-bg-font-size: 3em;
     /*Font Family*/
 }
 
@@ -30,6 +32,7 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     --Btn-primary-hover-background-color: #e60000;
     --Btn-primary-focus-background-color: #e60000;
     --Btn-primary-active-background-color: #cc0000;
+    --Btn-primary-outline-color: red;
     /*secondary color*/
     --Btn-secondary-color: red;
     --Btn-secondary-background-color: transparent;
@@ -39,12 +42,13 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     --Btn-secondary-hover-color: #e60000;
     --Btn-secondary-focus-color: #e60000;
     --Btn-secondary-active-color:#cc0000;
+    --Btn-secondary-outline-color: transparent;
     /*success color*/
     --Btn-success-color: black;
     --Btn-success-background-color: rgb(0, 192, 0);
     --Btn-success-hover-background-color: #008000;
-    --Btn-success-focus-background-color: #008000;
-    --Btn-success-active-background-color: #006600;
+    --Btn-success-focus-background-color: rgb(0, 192, 0);
+    --Btn-success-active-background-color: #008000;
     /*danger color*/
     --Btn-danger-color: black; 
     --Btn-danger-background-color: red;
@@ -79,6 +83,10 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     /*Typeography*/
     /*h1*/
     --h1-color: red;
+    --h1-background-color: transparent;
+    /*h1-landing*/
+    --h1-landing-color: Black;
+    --h1-landing-background-color: red;
     /*h2*/
     --h2-color: red;
     /*h3*/
@@ -111,6 +119,10 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     --webkit-scrollbar-thumb-border-color: red; 
     --webkit-resizer-background-color: red;
     --webkit-scrollbar-corner-background-color:red;
+    /*Modal*/
+    --modal-head-background-color: black;
+    --modal-backdrop-background-color: red;
+
 }
 .theme-light{
     /*background color*/
@@ -136,9 +148,9 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     /*Btn-success color*/
     --Btn-success-color: white;
     --Btn-success-background-color: rgb(0, 192, 0);
-    --Btn-success-hover-background-color: #008000;
-    --Btn-success-focus-background-color: #008000;
-    --Btn-success-active-background-color: #006600;
+    --Btn-success-hover-background-color: #009900;
+    --Btn-success-focus-background-color: rgb(0, 192, 0);
+    --Btn-success-active-background-color: #009900;
     /*Btn-danger color*/
     --Btn-danger-color: white;
     --Btn-danger-background-color: red;
@@ -175,8 +187,10 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     /*Typeography*/
     /*h1*/
     --h1-color: red;
+    --h1-background-color: transparent;
     /*h1-landing*/
-    --h1-landing-color: red;
+    --h1-landing-color: white;
+    --h1-landing-background-color: red;
     /*h2*/
     --h2-color: red;
     /*h3*/
@@ -209,50 +223,8 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     --webkit-scrollbar-thumb-border-color: red; 
     --webkit-resizer-background-color: red;
     --webkit-scrollbar-corner-background-color:red;
-}
+        /*Modal*/
+        --modal-head-background-color: white;
+        --modal-backdrop-background-color: rgb(68, 0, 0);
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .Custom-Styles {
-        /*Typeography*/
-        /*h1*/
-        --h1-font-size: 4rem;
-        /*h2*/
-        --h2-font-size: 2.5rem;
-        /*h3*/
-        --h3-font-size: 2rem;
-        /*h4*/
-        --h4-font-size: 1rem;
-        /*p*/
-        --p-font-size: 1rem;
-        /*p-sm*/
-        --p-sm-font-size: .5rem;
-        /*p-bg*/
-        --p-bg-font-size: 1rem;
-    }
-   
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .pop-up-modal-content {
-        width: 80%;
-    }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .pop-up-modal-content {
-        width: 70%;
-    }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .pop-up-modal-content {
-        width: 60%;
-    }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .pop-up-modal-content {
-        width: 50%;
-    }
 }
