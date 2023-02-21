@@ -4,21 +4,21 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
 .Custom-Styles{
     /*Typeography*/
     /*h1*/
-    --h1-font-size: 10em;
+    --h1-font-size: 6em;
     /*h1-landing*/
-    --h1-landing-font-size: 10em;
+    --h1-landing-font-size: 6em;
     /*h2*/
-    --h2-font-size: 8em;
+    --h2-font-size: 4em;
     /*h3*/
-    --h3-font-size: 6em;
+    --h3-font-size: 3em;
     /*h4*/
-    --h4-font-size: 4em;
+    --h4-font-size: 2em;
     /*p*/
-    --p-font-size: 2em;
+    --p-font-size: 1.5em;
     /*p-sm*/
-    --p-sm-font-size: 1.5em;
+    --p-sm-font-size: 1em;
     /*p-bg*/
-    --p-bg-font-size: 3em;
+    --p-bg-font-size: 2em;
     /*Font Family*/
 }
 
