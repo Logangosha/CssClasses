@@ -36,7 +36,9 @@
     margin: 1rem 3rem;
   }
   
-  .modal-body {padding: 2em 4em;}
+  .modal-body {
+    padding: 2em 4em;
+  }
 
   .modal-footer {
     border: none;

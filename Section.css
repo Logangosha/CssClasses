@@ -1,0 +1,39 @@
+.section-col > .section{
+    margin-bottom: 3em;
+}
+.section{
+    background-color:var(--section-background-color);
+    box-shadow: 0px 10px 13px 0px rgba(255,0,0,1);
+-webkit-box-shadow: 0px 10px 13px 0px rgba(255,0,0,1);
+-moz-box-shadow: 0px 10px 13px 0px rgba(255,0,0,1);
+}
+.section > .section-body {
+    padding: 2em 2em 2em 2em;
+}
+.section > .section-body > .section-header{
+    display: block;
+    text-align: center;
+}
+.section > .section-body > .section-content{
+    display: block;
+    text-align: center;
+}
+.section > .section-icon{
+    background-color: red;
+    display: block;
+    text-align: center;
+}
+.section > .section-icon > i {
+    font-size: 4em;
+    display: inline;
+    padding: .5em;
+    color: var(--section-icon-color);
+}
+.section > .section-btn{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 2em;
+    padding-left: 1.5em;
+    padding-right: 2em;
+    box-sizing: border-box;
+}

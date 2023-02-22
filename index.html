@@ -6,22 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" type="text/css" href="MQ.css">
     <link rel="stylesheet" type="text/css" href="ClassVariables.css">
     <link rel="stylesheet" type="text/css" href="Typeography.css">
     <link rel="stylesheet" type="text/css" href="Buttons.css">
 <title>Home Page</title>
 </head>
 <body class="theme-light Custom-Styles">
-<h1 class="h1-landing p-3">Styling for Chess App</h1>
-<a class="Btn Btn-secondary" href="Buttons.html">Buttons</a>
-<a class="Btn Btn-secondary" href="Typeography.html">Typography</a>
-<a class="Btn Btn-secondary" href="Input.html">Inputs</a>
-<a class="Btn Btn-secondary" href="Modal.html">Modals</a>
-<input type="checkbox" id="themeSwitch" style="visibility: hidden;" name="theme-switch" class="Btn Btn-unselected" />
-<label for="themeSwitch" class="Btn Btn-unselected">
-  <span>Switch theme</span>
-</label>
+<h1 class="h1-landing p-3">CSS Classes</h1>
+<div class="row flex-column-sm m-1 mt-5">
+    <div class="col text-center">
+    <input type="checkbox" id="themeSwitch" style="visibility: hidden; display:none;" name="theme-switch" class="Btn Btn-unselected" />
+        <label for="themeSwitch" class="Btn Btn-unselected">
+            <span>Switch theme</span>
+        </label>
+    </div>
+    <div class="col text-center">
+        <a class="Btn Btn-secondary" href="Buttons.html">Buttons</a>
+    </div>
+    <div class="col text-center">
+        <a class="Btn Btn-secondary" href="Typeography.html">Typography</a>
+    </div>
+    <div class="col text-center">
+        <a class="Btn Btn-secondary" href="Input.html">Inputs</a>
+    </div>
+    <div class="col text-center">
+        <a class="Btn Btn-secondary" href="Modal.html">Modals</a>
+    </div>
+    <div class="col text-center">
+        <a class="Btn Btn-secondary" href="Section.html">Sections</a>
+    </div>
+</div>
 <script>
     const themeSwitch = document.getElementById('themeSwitch');
     themeSwitch.addEventListener('change', function() {

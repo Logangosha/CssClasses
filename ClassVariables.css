@@ -1,4 +1,10 @@
-h1, h2, h3,h4,p,p.p-sm,p.p-bg {
+h1,
+h2, 
+h3,
+h4,
+p,
+p.p-sm,
+p.p-bg{
     font-family: 'Times New Roman', Times, serif !important;
 }
 .Custom-Styles{
@@ -24,8 +30,8 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
 
 .theme-dark{
     /*background color*/
-    --background-color: #000000;
-    background-color: var(--background-color);
+    --background-color: #1c1d20;
+    background-color: var(--background-color) !important;
     /*primary color*/
     --Btn-primary-color: black;
     --Btn-primary-background-color: red;
@@ -122,11 +128,14 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     /*Modal*/
     --modal-head-background-color: black;
     --modal-backdrop-background-color: red;
-
+    /*Section*/
+    --section-background-color: black;
+    
+    --section-icon-color: black;
 }
 .theme-light{
     /*background color*/
-    --background-color: #ffffff;
+    --background-color: #e7e8ec;
     background-color: var(--background-color);
     /*buttons*/
     
@@ -223,8 +232,10 @@ h1, h2, h3,h4,p,p.p-sm,p.p-bg {
     --webkit-scrollbar-thumb-border-color: red; 
     --webkit-resizer-background-color: red;
     --webkit-scrollbar-corner-background-color:red;
-        /*Modal*/
-        --modal-head-background-color: white;
-        --modal-backdrop-background-color: rgb(68, 0, 0);
-
-}
+    /*Modal*/
+    --modal-head-background-color: white;
+    --modal-backdrop-background-color: rgb(68, 0, 0);
+    /*Section*/
+    --section-background-color: #fafbff;
+    --section-icon-color: white;
+    }

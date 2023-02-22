@@ -1,18 +1,24 @@
 
 /*button*/
 .Btn{
-padding: 20px 35px;
+padding: .5rem 1.5rem;
 border: none;
 box-sizing: border-box;
-margin: 10px 5px;
-font-size: 2rem;
+font-size: 1.5rem;
 font-weight: bold;
 transition: background-color 0.1s ease;
 transition: color 0.1s ease;
 transition: outline 0.1s ease;
 text-decoration: none;
+white-space: nowrap;
+display:inline-block;
+max-width:min-content;
+/* max-width: fit-content; */
 }
 
+.U > *{
+    margin: 20px 10px;
+}
 /*primary button*/
 .Btn-primary{
     color: var(--Btn-primary-color);
@@ -110,8 +116,8 @@ text-decoration: none;
 
 /*icon small button*/
 .Btn-icon-small{
-    padding: 5px 10px;
-    font-size: 2rem;
+    padding: 10px 15px;
+    font-size: 1.2rem;
 }
 
 /*icon large button*/
